@@ -1,0 +1,19 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore logs
+logs/
+
+# Ignore datasets (if not needed in version control)
+datasets/
+
+# Ignore model files (if not needed in version control)
+models/
+
+# Ignore other temporary files
+*.tmp
+*.log
