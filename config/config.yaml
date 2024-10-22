@@ -1,6 +1,7 @@
 api:
-  api_key: "E9YYZYWWB3OR2"  # Replace with your actual Deriv API key
-  api_url: "https://api.deriv.com"    # This is the URL for the Deriv API
+  app_id: "64460"  # Replace with your actual App ID from Deriv
+  api_key: "l870H6oa2GJ6Qmq"  # Replace with your actual API token from Deriv
+  api_url: "https://api.deriv.com"  # This is the URL for the Deriv API
 
 trading:
   symbols: 
@@ -16,11 +17,11 @@ trading:
     - "1h"
     - "4h"
     - "1d"
-  max_trades_per_day: 10  # adjustable
+  max_trades_per_day: 10  # Adjustable
   risk_management:
     stop_loss: 0.01  # Stop loss percentage
     take_profit: 0.02  # Take profit percentage
 
 logging:
-  level: "INFO"  # Can be "DEBUG" for more detailed logging
+  level: "DEBUG"  # Can be "DEBUG" for more detailed logging
   file: "logs/bot.log"  # Log file location

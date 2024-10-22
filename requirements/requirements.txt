@@ -6,3 +6,12 @@ keras
 matplotlib
 ta
 requests
+seaborn
+jupyterlab
+yfinance
+joblib
+statsmodels
+scipy
+plotly
+pytz
+datetime
