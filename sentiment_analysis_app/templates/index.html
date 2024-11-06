@@ -1,0 +1,19 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basic Sentiment Analysis</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Sentiment Analysis Test</h1>
+            <input type="text" id="searchInput" placeholder="Enter text..."/>
+            <button id="searchBtn">Analyze Sentiment</button>
+            <div id="articles" class="articles"></div>
+        </div>
+    </body>
+</html>
