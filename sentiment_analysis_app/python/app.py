@@ -1,7 +1,6 @@
-# app.py
 from flask import Flask, request, jsonify, render_template
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates', static_folder='static')
 
 @app.route('/')
 def home():
@@ -12,7 +11,9 @@ def predict():
     data = request.json
     text = data.get("text", "")
 
-    # Hardcoded response for now
+    if not text:
+        return jsonify({'error': 'No text provided'}), 400
+
     sentiment = "Positive" if "good" in text.lower() else "Negative"
     return jsonify({'prediction': sentiment})
 
